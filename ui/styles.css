@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    visibility: hidden;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-color: var(--background-primary);
+}
+
+.app-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #9cb1fff8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 10vh;
+    
+}
+
+.header,
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.2rem;
+}
+
+.button-wrapper {
+    gap: 1rem;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bold;
+    top: 5vh;
+    color: rgb(0, 0, 0);
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 400;
+
+    color: var(--text-secondary);
+}
+
+button {
+    width: 14rem;
+    height: 3.25rem;
+
+    background-color: var(--background-highlight);
+    color: var(--text-primary);
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+
+    user-select: none;
+}
+
+button:hover {
+    filter: brightness(0.8);
+}
+
+input {
+    width: 14rem;
+    height: 3.25rem;
+
+    background-color: var(--background-highlight);
+    color: var(--text-primary);
+
+    border: none;
+    border-radius: 7px;
+
+    padding: 0 1rem;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: all 0.25s ease-in-out;
+
+    outline: none;
+}
+
+
+#phone-wrapper {
+    display: none;
+
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    width: 29rem;
+    height: 58.5rem;
+}
+
+div#q-loading-bar { display: none!important; } /* makes sure there's no ajax load from quasar */
+::-webkit-scrollbar { display: none!important; } /* makes sure there's no ugly scrollbar on menu*/
+
+.groups-header {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    font-variant: small-caps;
+    color: rgb(0, 0, 0);
+    
+}
+
+.groups-icon {
+    align-items: center;
+    color: rgb(0, 0, 0) !important;
+}
+
+.groups-main {
+    padding-bottom: 25vh;
+}
+
+.groups-list {
+    padding-bottom: 25vh;
+}
+
+.groups-no-groups {
+    text-align: center;
+    color: white;
+}
+
+.groups-requests {
+    padding-bottom: 15vh;
+}
+
+.groups-group {
+    bottom: 20vh;
+}
+
+.groups-members {
+    text-align: center;
+}
+
+.member {
+    font-size: 25px;
+    color: white;
+}
+
+.member-name {
+    font-size: 20px;
+    color: white;
+}
+
+.groups-footer.fixed-bottom {
+    bottom: 2vh;
+}
+
+.create-group{
+    bottom: 10vh;
+}
+
+.available-groups{
+    bottom: 10vh;
+}
+.groups-container{
+    padding-bottom: 15vh;
+}
